@@ -1,18 +1,15 @@
-const doa = document.querySelector('#ca');
-const rea = document.querySelector('#da');
-const mia = document.querySelector('#ea');
-const faa = document.querySelector('#fa');
-const sola = document.querySelector('#ga');
+const doa = document.querySelector('#ac');
+const rea = document.querySelector('#ad');
+const mia = document.querySelector('#ae');
+const faa = document.querySelector('#af');
+const sola = document.querySelector('#ag');
 const laa = document.querySelector('#aa');
-const sia = document.querySelector('#ba');
-const doa2 = document.querySelector('#ca2');
-
+const sia = document.querySelector('#ab');
+const doa2 = document.querySelector('#ac2');
 
 const piano = document.querySelector('#piano');
 
-
 document.addEventListener('keypress', function(e) {
-    console.log(e.keyCode);
     let dj = '';
     if (e.keyCode === 97) {
         dj = doa;
@@ -35,6 +32,11 @@ document.addEventListener('keypress', function(e) {
         dj.load();
         dj.play();
     }
+    // const id = document.getElementById(dj.id).id;
+    // const doc = document.getElementById(id.slice(1));
+    // doc.style.backgroundColor = 'rgb(230, 230, 230)';
+    // setTimeout(1000);
+    // doc.style.backgroundColor = 'white';
 });
 
 piano.addEventListener('click', function(e) {
