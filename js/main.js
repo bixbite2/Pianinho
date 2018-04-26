@@ -1,10 +1,12 @@
-const doa = document.querySelector('#doa');
-const rea = document.querySelector('#rea');
-const mia = document.querySelector('#mia');
-const faa = document.querySelector('#faa');
-const sola = document.querySelector('#sola');
-const laa = document.querySelector('#laa');
-const sia = document.querySelector('#sia');
+const doa = document.querySelector('#ca');
+const rea = document.querySelector('#da');
+const mia = document.querySelector('#ea');
+const faa = document.querySelector('#fa');
+const sola = document.querySelector('#ga');
+const laa = document.querySelector('#aa');
+const sia = document.querySelector('#ba');
+const doa2 = document.querySelector('#ca2');
+
 
 const piano = document.querySelector('#piano');
 
@@ -26,8 +28,9 @@ document.addEventListener('keypress', function(e) {
         dj = laa;
     } else if (e.keyCode === 106) {
         dj = sia;
+    } else if (e.keyCode === 107) {
+        dj = doa2;
     }
-    console.log(dj);
     if (dj !== '') {
         dj.load();
         dj.play();
@@ -37,22 +40,23 @@ document.addEventListener('keypress', function(e) {
 piano.addEventListener('click', function(e) {
     console.log(e.target.id);
     let dj = '';
-    if (e.target.id === 'do') {
+    if (e.target.id === 'c') {
         dj = doa;
-    } else if (e.target.id === 're') {
+    } else if (e.target.id === 'd') {
         dj = rea;
-    } else if (e.target.id === 'mi') {
+    } else if (e.target.id === 'e') {
         dj = mia;
-    } else if (e.target.id === 'fa') {
+    } else if (e.target.id === 'f') {
         dj = faa;
-    } else if (e.target.id === 'sol') {
+    } else if (e.target.id === 'g') {
         dj = sola;
-    } else if (e.target.id === 'la') {
+    } else if (e.target.id === 'a') {
         dj = laa;
-    } else if (e.target.id === 'si') {
+    } else if (e.target.id === 'b') {
         dj = sia;
+    } else if (e.target.id === 'c2') {
+        dj = doa2;
     }
-    console.log(dj);
     if (dj !== '') {
         dj.load();
         dj.play();
