@@ -35,7 +35,6 @@ document.addEventListener('keypress', function(e) {
     // const id = document.getElementById(dj.id).id;
     // const doc = document.getElementById(id.slice(1));
     // doc.style.backgroundColor = 'rgb(230, 230, 230)';
-    // setTimeout(1000);
     // doc.style.backgroundColor = 'white';
 });
 
